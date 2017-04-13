@@ -1,0 +1,209 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+#game {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#progress {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#progressBar {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 50%;
+    margin-top: -160px;
+    height: 20px;
+    background: green;
+    border: none;
+}
+
+button {
+    box-sizing: border-box;
+    background: none;
+    margin: 0 auto;
+    margin-top: 250px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+button:hover {
+    background: #fff;
+    color: black;
+}
+
+.infobox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -160px;
+    width: 400px;
+    height: 320px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.menu {
+      position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -160px;
+    width: 300px;
+    height: 200px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color: #fff;
+     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+.menu h2:hover{
+    color: grey;
+    cursor: pointer;
+}
+.menu p{
+    font-size: 20px;
+}
+.menu p:hover{
+    color: grey;
+    cursor: pointer;
+}
+.invisible {
+    display: none;
+}
+
+.loader {
+    margin: 0 auto;
+    margin-top: 240px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-bottom: 16px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#health {
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    display: block;
+    border: 2px solid black;
+    height: 20px;
+}
+
+.healthImg {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#score {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: white;
+    padding: 5px 13px;
+    text-align: center;
+    display: inline-block;
+    height: 20px;
+    font-size: 36px;
+}
+
+#ammo {
+    position: absolute;
+    bottom: 95px;
+    left: 45px;
+    color: white;
+    padding: 5px 13px;
+    text-align: center;
+    display: inline-block;
+    height: 20px;
+    font-size: 36px;
+}
+#armor {
+    position: absolute;
+    bottom: 75px;
+    left: 45px;
+    display: block;
+    border: 2px solid black;
+    height: 20px;
+}
+#armor::-webkit-progress-value {
+    background: blue;
+}
+#health::-webkit-progress-value {
+    background: green;
+}
+
+.armorImg {
+    position: absolute;
+    bottom: 70px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.bulletImg {
+    position: absolute;
+    bottom: 120px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#aim {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+}
